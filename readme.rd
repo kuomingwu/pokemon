@@ -37,3 +37,28 @@
     - set property
     - engage controller
 
+5. endpoints : 
+[POST] /api/Pokemon/pikachu
+    body : 
+    {
+        "name":"皮卡丘01"
+    }
+    response : 
+    {
+        "entity": {
+            "type": "Pikachu",
+            "name": "皮卡丘01",
+            "id": "bc62f1a6-2e38-4af6-accc-0dfa1ba72db2"
+        }
+    }
+
+    Type Assertion
+    ActionResult<dynamic>
+
+[POST] /api/Auth/customize/post
+
+[POST] /api/Auth
+
+[GET] /api/Auth
+
+[GET] /WeatherForecast
