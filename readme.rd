@@ -41,14 +41,20 @@
 [POST] /api/Pokemon/pikachu
     body : 
     {
-        "name":"皮卡丘01"
+        "name":"皮卡丘01",
+        "lv" : 5 , 
+        "maxHP" : 1999 ,
+        "currentHP" : 999
     }
     response : 
     {
         "entity": {
             "type": "Pikachu",
             "name": "皮卡丘01",
-            "id": "bc62f1a6-2e38-4af6-accc-0dfa1ba72db2"
+            "currentHP": 999,
+            "maxHP": 1999,
+            "lv": 5,
+            "id": "1728fe0b-8fe6-474e-a838-4e89a9f31cd1"
         }
     }
 

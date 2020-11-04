@@ -21,17 +21,20 @@ namespace jon.Controllers
 
         [HttpPost]
         [Route("pikachu")]
-        public ActionResult<dynamic> Create([FromBody] CreateBody entity)
+        public ActionResult<dynamic> Create([FromBody] Pikachu entity)
         {
             //新增一隻皮卡丘
             Pikachu pika = new Pikachu();
-            pika.name = entity.name ;
-            return StatusCode(200 , new {
+            pika = entity ;
+            
+            int code = 200 ;
+            return StatusCode(code , new {
                 entity = pika
             });
         }
         public class CreateBody {
             public string name { get ; set ; }
+
         }
     }
 }
